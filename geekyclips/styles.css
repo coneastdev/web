@@ -1,0 +1,22 @@
+body {
+    background-color: #fffefe;
+    margin: 0;
+}
+
+header nav button {
+    width: 25%;
+    height: 8vh;
+    background-color: #eeecec;
+    margin: 0%;
+    border: none;
+    color: #222;
+    font-size: 2vw;
+}
+
+header nav button:hover {
+    background-color: #dddcdc;
+}
+
+#home-btn {
+    border-bottom: 0.5vh solid blue;
+}
