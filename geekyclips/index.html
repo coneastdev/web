@@ -11,27 +11,36 @@
 <body>
     <header>
         <nav>
-            <button onclick="window.location.href='https\://coneastdev.github.io/web/geekyclips'" id="home-btn"><i class="bi bi-house-door-fill"></i> <b>home</b></button><button onclick="window.location.href='https\://coneastdev.github.io/web/geekyclips'" id="close-btn">close</button><button class="hid-btn"></button></button><button class="hid-btn"></button><button class="hid-btn"></button><button><i class="bi bi-basket-fill"></i> <b>buy</b></button><button><i class="bi bi-person-fill"></i> <b>contact</b></button>
+            <button onclick="window.location.href='https\://coneastdev.github.io/web/geekyclips'" id="home-btn"><i class="bi bi-house-door-fill"></i> <b>home</b></button><output id="name-nav">Geeky clips</output><button onclick="window.location.href='https\://coneastdev.github.io/web/geekyclips'" id="close-btn">close</button><button class="hid-btn"></button></button><button class="hid-btn"></button><button class="hid-btn"></button><button onclick="window.location.href = 'https://coneastdev.github.io/web/geekyclips?product=Jolly frosty'"><i class="bi bi-basket-fill"></i> <b>buy</b></button><button><i class="bi bi-person-fill"></i> <b>contact</b></button>
         </nav>
         <!-- <div class="break"></div> -->
     </header>
     <div id="shop" style="display: none;">
-      shop <output id="productname"></output>
+      <h1 style="position: absolute; left: 15vw; top: 20vh;"><output id="productname">Product name</output></h1>
+      <img id="product-img" src="./media/Jolly frosty.png" width="30%" height="300vh" style="position: absolute; left: 15vw; top: 37.5vh; border-radius: 5px; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;">
+      <div style="width: 45%; position: absolute; left: 50vw; top: 20vh; text-align: left;">
+        <h1>Select your design</h1>
+        <select onchange="selectfunc()" id="pro-select">
+          <option id="Jolly frosty-opt" value="Jolly frosty">Jolly frosty</option>
+          <option id="Supper star-opt" value="Supper star">Supper star</option>
+          <option id="Plesant pine-opt" value="Pleasant pine">Pleasant pine</option>
+        </select>
+      </div>
     </div>
     <span id="main">
       <div id="featured-carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./media/snow.png" class="d-block w-100" alt="image A not loading...">
-              <a href="?product=frosty" class="carlink">Joly frosty £3.99</a>
+              <img src="./media/Jolly frosty.png" class="d-block w-100" alt="image not loading...">
+              <a href="?product=Jolly frosty" class="carlink">Joly frosty £3.99</a>
             </div>
             <div class="carousel-item">
-              <img src="./media/star.png" class="d-block w-100" alt="image B not loading...">
-              <a href="?product=star" class="carlink">supper star £3.99</a>
+              <img src="./media/Supper star.png" class="d-block w-100" alt="image not loading...">
+              <a href="?product=Supper star" class="carlink">supper star £3.99</a>
             </div>
             <div class="carousel-item">
-              <img src="./media/tree.png" class="d-block w-100" alt="image C not loading...">
-              <a href="?product=pine" class="carlink">plesant pine £3.99</a>
+              <img src="./media/Plesant pine.png" class="d-block w-100" alt="image not loading...">
+              <a href="?product=Plesant pine" class="carlink">plesant pine £3.99</a>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#featured-carousel" data-bs-slide="prev">
@@ -55,6 +64,18 @@
           <br><br>
       </div>
     </span>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast bg-dark" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header bg-dark" style="color: #fffefe;">
+          <strong class="me-auto">Notice</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          We do free shiping on orders over £50 to the UK.
+        </div>
+      </div>
+    </div>    
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
