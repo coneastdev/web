@@ -20,11 +20,16 @@
       <img id="product-img" src="./media/Jolly frosty.png" width="30%" height="300vh" style="position: absolute; left: 15vw; top: 37.5vh; border-radius: 5px; box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;">
       <div style="width: 45%; position: absolute; left: 50vw; top: 20vh; text-align: left;">
         <h1>Select your design</h1>
-        <select onchange="selectfunc()" id="pro-select">
+        <select onchange="selectfunc()" id="pro-select" style="margin: 2%; background-color: #ddd; border-radius: 20px; border: none; padding: 2%; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;">
           <option id="Jolly frosty-opt" value="Jolly frosty">Jolly frosty</option>
           <option id="Supper star-opt" value="Supper star">Supper star</option>
-          <option id="Plesant pine-opt" value="Plesant pine">Plesant pine</option>
+          <option id="Plesant pine-opt" value="Plesant pine">Pleasant pine</option>
         </select>
+        <h2>stock <output id="stock" style="box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; border-radius: 20px; padding: 1%; background-color: #ddd; color: #22222a;">27</output></h2>
+        <br><br>
+        <h2>Price £3.99</h2>
+        <button onclick="alert('we are not curuntly selling this product')" class="btn btn-primary" style="width: 40%; height: 10vh; border-radius: 20px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; margin: 3%;">Purchase</button>
+        <h6 style="color: #ccc;">by purchaseing you agree to are <a style="padding: 0; background-color: #555; color: #0055d3;" href="#">policys</a></h6>
       </div>
     </div>
     <span id="main">
