@@ -1,5 +1,5 @@
 body {
-    background-color: #ccc;
+    background-color: #444;
     margin: 0;
     color: #fffefe;
 }
@@ -20,6 +20,7 @@ header nav button {
     font-size: 2vw;
     border-radius: 10px;
     color: #fffefe;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 #close-btn {
@@ -31,7 +32,14 @@ header nav button {
     font-size: 2vw;
     border-radius: 10px;
     color: #fffefe;
-    visibility: hidden;
+    display: none;
+}
+
+#name-nav {
+    width: 13%;
+    height: 8vh;
+    margin: 0.2%;
+    font-size: 2vw;
 }
 
 #close-btn:hover {
@@ -62,14 +70,14 @@ header nav button.hid-btn {
 }
 
 #shop {
-    position: sticky;
-    width: 70%;
-    height: 85vh;
-    top: 10%;
-    z-index: 1000;
-    margin: 0 auto;
-    background-color: #444;
-    border-radius: 15px;
+    width: 75%;
+    height: 80vh;
+    margin: 6% auto;
+    border-radius: 20px;
+    background-color: #555;
+    text-align: center;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 a.carlink {
