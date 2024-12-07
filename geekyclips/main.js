@@ -12,13 +12,14 @@ if (product_id != null && product_id != "") {
         document.getElementById("main").style.display = "none"
         document.getElementById(product_id + "-opt").selected = "true"
         document.getElementById("product-img").src = "./media/" + product_id + ".png" 
+        document.getElementById("stock").innerText = Math.round(Math.random() * 17) + 5
     }, 100);
 } else {
     const toastLiveExample = document.getElementById('liveToast')
 }
 
 function selectfunc() {
-    window.location.href = "https://coneastdev.github.io/web/geekyclips?product=" + document.getElementById("pro-select").value
+    window.location.href = "https://coneastdev.github.io/web/geekyclips?product=" + product_id
 }
 
 
