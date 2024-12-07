@@ -19,7 +19,7 @@ if (product_id != null && product_id != "") {
 }
 
 function selectfunc() {
-    window.location.href = "https://coneastdev.github.io/web/geekyclips?product=" + product_id
+    window.location.href = "https://coneastdev.github.io/web/geekyclips?product=" + document.getElementById("pro-select")
 }
 
 
