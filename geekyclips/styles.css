@@ -137,6 +137,22 @@ a:hover {
     display: none;
 }
 
+#credits {
+    background-color: #333; 
+    width: 100%; 
+    color: #777;
+}
+
+#credits a:hover {
+    background: none;
+    opacity: 1;
+    text-decoration: underline;
+    color: rgb(87, 53, 199);
+    border-radius: 0;
+    padding: 0;
+    display: inline;
+}
+
 @media only screen and (max-width: 800px) {
     header nav button {
         width: 33.33333%;
@@ -218,4 +234,3 @@ a:hover {
         display: none;
     }
 }
-
