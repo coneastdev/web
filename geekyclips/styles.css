@@ -40,6 +40,7 @@ header nav button {
     height: 8vh;
     margin: 0.2%;
     font-size: 2vw;
+    text-shadow: 2px 2px 1px #111;
 }
 
 #close-btn:hover {
@@ -99,7 +100,44 @@ a:hover {
     left: 34vw; 
 }
 
-@media only screen and (max-width: 600px) {
+#recycle {
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: #444;
+}
+
+#recycle span h3 {
+    width: 60%; 
+    height: 30vh; 
+    font-size: 2vw;
+}
+
+#custom {
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: #444;
+}
+
+#custom {
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: #444;
+}
+
+#custom span h3 {
+    width: 60%; 
+    height: 30vh; 
+    font-size: 2vw;
+}
+
+#custom-img-hid {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
     header nav button {
         width: 33.33333%;
         height: 8vh;
@@ -120,7 +158,7 @@ a:hover {
 
     #youtubevideo {
         width: 100%;
-        height: 35vh;
+        height: 60vw;
     }
     #name-nav {
         display: none;
@@ -129,6 +167,55 @@ a:hover {
         border: #333;
         background-color: #444;
         box-shadow: none;
+    }
+    #recycle {
+        width: 100%;
+        display: inline;
+        height: auto;
+        background-color: #444;
+        text-align: center;
+    }
+
+    #recycle span {
+        width: 100%;
+    }
+
+    #recycle span h3 {
+        width: 70%;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 3vh;
+    }
+
+    #recycle img {
+        width: 100%;
+    }
+    
+    #custom {
+        width: 100%;
+        display: inline;
+        height: auto;
+        background-color: #444;
+        text-align: center;
+    }
+
+    #custom span {
+        width: 100%;
+    }
+
+    #custom span h3 {
+        width: 70%;
+        text-align: left;
+        margin: 0 auto;
+        font-size: 3vh;
+    }
+
+    #custom-img-hid {
+        width: 100%;
+        display: inline;
+    }
+    #custom-img-show {
+        display: none;
     }
 }
 
