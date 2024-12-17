@@ -3,7 +3,7 @@ A portfolio of websites.
 
 # <a href="https://coneastdev.github.io/web/geekyclips/">geeky clips</a>
 
-Geeky clips is a project made for a collge christmas competition on marketing a new idea for just geek. I came up with geeky clips, christmas decorations for your glasses.
+Geeky clips is a project made for a collge christmas competition on marketing a new idea for just geek. I came up with geeky clips, christmas decorations for your glasses. Made in Decmber 2024, also it won the competition.
 
 # <a href="https://coneastdev.github.io/web/oldwebsite/">Old website</a>
 
